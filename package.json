@@ -1,0 +1,36 @@
+{
+  "name": "book_management",
+  "version": "1.0.0",
+  "description": "Book Management Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET DEBUG=book_management:* $ & SET NODE_ENV=production & node index.js",
+    "dev": "SET DEBUG=book_management:* $ & SET NODE_ENV=development & nodemon index.js",
+    "lint-fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngoctu99/book_management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ngoctu99/book_management/issues"
+  },
+  "homepage": "https://github.com/ngoctu99/book_management#readme",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0",
+    "knex": "^3.2.10",
+    "nodemon": "^3.1.14"
+  }
+}
