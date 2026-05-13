@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ngoctu99/book_management#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "debug": "^4.4.3",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
