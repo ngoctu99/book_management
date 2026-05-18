@@ -55,7 +55,7 @@ const userModel = (knex) => {
             .where({email});
 
         if(user.length > 0){
-            const isMatch = await verifyPassword([password, user[0].password]);
+            const isMatch = await verifyPassword(password, user[0].password);
 
             if(isMatch) {
                 delete user[0].password;

@@ -28,7 +28,6 @@ const ModelHelper = ({
     const findOne = (filters) => find(filters)
         .then((results) => {
             if(!Array.isArray(results)) return results;
-
             return results[0];
         })
 
